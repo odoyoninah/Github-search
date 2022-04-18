@@ -1,2 +1,8 @@
 <input type="text" #val placeholder="enter your github username">
 <button role="button" (click)="searchGithub(val.value)">search</button>
+<div >
+    <h3>{{results.login}}</h3>
+    <img src="{{results.avatar_url}}" alt="{{results.login}}">
+    
+
+</div>
