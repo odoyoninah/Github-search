@@ -11,5 +11,7 @@ export class GithubComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+searchGithub(searchTerm: string) {
+  
+}
 }
