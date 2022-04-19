@@ -1,0 +1,24 @@
+.body{
+    background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaG5vbG9neSUyMHdlYnNpdGVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-color: #6668ec52;
+    opacity: 0.9;
+    
+}
+.heading{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    
+
+}
+.tafuta{
+    background-color: #abc3e7ab;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
