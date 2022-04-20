@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from '../github.service';
+import { ItemsClass } from '../items-class';
 
 @Component({
   selector: 'app-github',
@@ -20,5 +21,20 @@ searchGithub(searchTerm: string) {
     }
   });
 
+}
+repoResults!: ItemsClass[];
+searchRepo(searchTerm: string) {
+this.searchService.getRepos(searchTerm).then(
+  (successful)=>{
+    console.log('successful');
+    this.repoResults = this.searchService.repoResultsArray;
+    console.log(this.repoResults)
+
+  },
+  (err)=>{
+    console.log('err');
+  }
+
+)
 }
 }

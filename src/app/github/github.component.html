@@ -23,4 +23,16 @@
       </div>
     </div>
   </div>
+  
+  
 </div>
+<div class="input2">
+  <input type="text" #repo placeholder="enter your repositories"/>
+  <button type ="button" (click)="searchRepo(repo.value)">Search Repo</button>
+</div>
+<div *ngFor="let repoResult of repoResults "><p>Github repo</p>
+
+  <img [src] = "repoResult.owner.avatar_url" alt="reponame">
+  
+</div>
+
