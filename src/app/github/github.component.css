@@ -15,11 +15,15 @@
     
 
 }
-.tafuta{
+.tafuta1{
     background-color: #abc3e7ab;
     border-radius: 80px;
     padding: 20px;
     margin-bottom: 15px;
     text-align: center;
-    width: 40%;
+    width: 90%;
+    /* margin: right; */
+    margin-top: 10px;
+
 }
+
