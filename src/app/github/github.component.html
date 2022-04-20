@@ -1,7 +1,7 @@
 <div class="body">
   <div class="heading">
     <h1 class="mt-4 text-center maneno"><u>Welcome To Github</u></h1>
-    <br>
+    <br />
     <p>
       Github is a website where developers get to interact with other developers
       and get to contribute to open source projects.<br />
@@ -15,11 +15,12 @@
       <h5 class="card-title">Search Github</h5>
       <p class="card-text">Search Github for users</p>
 
-      <div class=" input-group mb-3 fomu">
-      <input type="text" #val placeholder="enter your github username" />
-      <button class="btn btn-primary text">
-      <button role="button" (click)="searchGithub(val.value)">search</button>
-    </button>
+      <div class="input-group mb-3 fomu">
+        <input type="text" #val placeholder="enter your github username" />
+        
+          <button type="button" class="btn btn-primary text" (click)="searchGithub(val.value)">
+            Search Username
+          </button>
       </div>
       <div class="login">
         <h3>{{ results.login }}</h3>
@@ -27,16 +28,13 @@
       </div>
     </div>
   </div>
-  
-  
-</div>
-<div class="input2">
-  <input type="text" #repo placeholder="enter your repositories"/>
-  <button type ="button" (click)="searchRepo(repo.value)">Search Repo</button>
-</div>
-<div *ngFor="let repoResult of repoResults "><p>Github repo</p>
+  <div class="input2">
+    <input type="text" #repo placeholder="enter your repositories" />
+    <button type="button" class="btn btn-primary text" (click)="searchRepo(repo.value)">Search Repo</button>
+  </div>
+  <div *ngFor="let repoResult of repoResults">
+    <p>Github repo</p>
 
-  <img [src] = "repoResult.owner.avatar_url" alt="reponame">
-  
+    <img [src]="repoResult.owner.avatar_url" alt="reponame" />
+  </div>
 </div>
-
