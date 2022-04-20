@@ -9,6 +9,7 @@ import { ItemsClass } from '../items-class';
 })
 export class GithubComponent implements OnInit {
 results!: any;
+  searchService2: any;
   constructor(public searchService: GithubService) { }
 
   ngOnInit(): void {
@@ -23,15 +24,15 @@ searchGithub(searchTerm: string) {
 
 }
 repoResults!: ItemsClass[];
-searchRepo(searchTerm: string) {
-this.searchService.getRepos(searchTerm).then(
-  (successful)=>{
+searchRepo(searchTerm2: string) {
+this.searchService2.getRepos(searchTerm2).then(
+  (successful: any)=>{
     console.log('successful');
-    this.repoResults = this.searchService.repoResultsArray;
+    this.repoResults = this.searchService2.repoResultsArray;
     console.log(this.repoResults)
 
   },
-  (err)=>{
+  (err: any)=>{
     console.log('err');
   }
 

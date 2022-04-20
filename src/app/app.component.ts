@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'github-search';
+  title2 = 'github-search2';
 }
