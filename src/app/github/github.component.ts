@@ -24,15 +24,15 @@ searchGithub(searchTerm: string) {
 
 }
 repoResults!: ItemsClass[];
-searchRepo(searchTerm2: string) {
-this.searchService2.getRepos(searchTerm2).then(
-  (successful: any)=>{
+searchRepo(searchTerm: string) {
+this.searchService.getRepos(searchTerm).then(
+  (_successful: any)=>{
     console.log('successful');
-    this.repoResults = this.searchService2.repoResultsArray;
+    this.repoResults = this.searchService.repoResultsArray;
     console.log(this.repoResults)
 
   },
-  (err: any)=>{
+  (_err: any)=>{
     console.log('err');
   }
 
